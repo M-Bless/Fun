@@ -18,7 +18,7 @@
         <input type="text" id="username" placeholder="Username here..." />
         <label for="password">Password:</label>
         <input type="password" id="password" placeholder="Password here..." />
-        <button>Login</button>
+        <button type="button" onclick="func()">LOGIN </button>
       </form>
       <div class="ear-l"></div>
       <div class="ear-r"></div>
@@ -42,8 +42,19 @@
 
 
 <!-- Script -->
+<script>
+  function func(){
+    let passwordRef = document.getElementById("password").value;
+    if(passwordRef == '111'){
+      alert("Successful! Welcome");
+      window.location.assign("windows.html");
+    } else {
+      alert("Wrong password, try again");
+    }
+  }
+</script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
-    
+  
   </body>
 </html>
